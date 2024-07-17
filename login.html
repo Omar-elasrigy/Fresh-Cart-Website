@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="search.css">
+    <title>eCommerce Project</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+/* 
+        #container {
+            width: 100%;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+
+        /* #header {
+            background-color: rgb(125,174,48);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        } */
+
+        #login-form {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 150px;
+            background-color: #c6c3c3;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            text-align: center;
+        }
+
+        .input-login {
+            margin: 20px 10px;
+            width: 70%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: white;
+        }
+        /* #profile{
+            margin-bottom: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: rgb(125,174,48);
+            color: white;
+            cursor: pointer;
+            width: 100px;
+            
+
+        } */
+        .login_button,#login_button,#profile{
+            margin-bottom: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: rgb(125,174,48);
+            color: white;
+            cursor: pointer;
+            width: 100px;
+
+        }
+        /* .login_button {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: rgb(125,174,48);
+            color: white;
+            cursor: pointer;
+            width: 100px;
+        }  */
+
+        button:hover {
+            background-color: green;
+        }
+
+        .pass_label {
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        #user_profile_page {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .products_login {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+
+    <nav>
+        <h1>FreshCart</h1>
+        <div class="form">
+          <input
+            type="text"
+            placeholder="Search for products"
+            class="searchBar"
+          />
+          <a class="searchButton" onclick="searchForItems()">Search</a>
+        </div>
+        <div class="login">
+          <h3>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <div class="visible count"></div>
+            <a href="cart.html">Cart</a>
+          </h3>
+          
+          <h3>Contact Us</h3>
+          <div id="user-profile"></div>
+
+        </div>
+      </nav>
+
+
+
+
+    <!-- <nav>
+        <h1>FreshCart</h1>
+        <div class="form">
+            <input type="text" placeholder="Search for products" class="searchBar">
+            <a class="searchButton" onclick="searchForItems()">Search</a>
+        </div>
+        <div class="login">
+            <h3><i class="fa-solid fa-cart-shopping"></i><div class="visible count"></div>Cart</h3>
+            <div id="user-profile"></div>
+            <h3>Contact Us</h3>
+        </div>
+    </nav> -->
+
+    <form id="login-form">
+        <label>Username: </label>
+        <input class="input-login" type="text" name="username" id="username"><br>
+        <label class="pass_label">Password: </label>
+        <input class="input-login" type="password" name="password" id="password"><br>
+        <button id="login_button" type="button">Log In</button>
+    </form>
+
+    <div id="user_profile_page"></div>
+   
+    <div id="load_page" class="products_login">
+        <div class="container">
+            <div class="category">
+                <h3 class="pro">Product</h3>
+                <div class="container-list">
+                    <h3 class="cat">Category<i class="fa-solid fa-chevron-down"></i></h3>
+                    <div class="cat-items block"></div>
+                </div>
+            </div> 
+            <div class="display"></div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+    <script src="search.js"></script>
+    <script src="login.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.container{
+    display: flex;
+    margin: 3rem 150px;
+    
+}
+.cart{
+    width: 65%;
+    background-color: #f2f2f2;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 30px 0;
+}
+
+h2 a{
+    text-decoration: none;
+    color: green;
+}
+h2 a:hover{
+    background-color: darkgreen;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+table{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+tr , td{
+    padding: 20px;
+    text-align: center;
+}
+.quantity{
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+.table-head{
+    color: white;
+    background-color: rgb(125,174,48);
+}
+.head-img{
+    text-align: left;
+    padding-left: 7px;
+}
+.check{
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+.summary
+{
+    width: 300px;
+    background-color: #f2f2f2;
+    margin-left: 50px;
+}
+.top .Th2{
+    background-color: rgb(125,174,48);
+    width: 100%; 
+    padding: 10px;    
+    color: white;  
+}
+
+
+.promo{
+    padding: 10px;
+}
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 3px;
+}
+.btn1{
+    margin: 10px;
+    background-color: rgb(125,174,48);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    width: 50%;
+}
+
+.checkout{
+    margin-top: 20px;
+    background-color: rgb(125,174,48);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+}
+
+.checkout:hover , .btn1:hover{
+    background-color:green ;
+}
+
+
+
+
+.trash {
+    color: red;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    width: 100%;
+    height: 50px;
+}
+
+.trash:hover{
+    color: darkred;
+}
+
+.quantity button {
+    background-color: rgb(125,174,48);
+    color: white;
+    border: none;
+    border-radius: 100%;
+    width: 40%;
+}
+
+.quantity button:hover{
+    background-color: green;
+}
+
+img{
+    width: 100px;
+    border-radius: 100%;
+}
+
