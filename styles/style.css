@@ -1,0 +1,307 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    padding-top: 10px;
+    position: sticky;
+    top: 0;
+    right: 0%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    background-color: #fafffe;
+    box-shadow: 0px 2px 5px rgb(0 12 0 / 33%);
+    h1,h3{
+        margin-block: 20px;
+    }
+    h1{
+        margin-right: 20px;
+        font-size: 40px;
+        color: rgb(9, 147, 9);
+    }
+}
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+.form button{
+    height: 42px;
+    width: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(9, 147, 9, 1);
+    border: 2px solid rgb(9, 147, 9);
+    background-color: rgb(9, 147, 9);
+    padding: 0;
+    color: white;
+    cursor: pointer;
+    transition:all .5s;
+    i{
+        font-size: 18px;
+    }
+}
+.form button:hover{
+    background-color: white;
+    color: rgb(9, 147, 9);
+}
+.form input{
+    width: 80%;
+    height: 20px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    
+    box-shadow: 0 0 5px rgba(9, 147, 9, 1);
+}
+.login h3{
+    margin-inline: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.login h3 a{
+    text-decoration: none;
+    color: black;
+}
+.cart:hover{
+    padding: 10px;
+    background-color: rgb(9, 147, 9);
+    color: white;
+    border-radius: 3px;
+}
+.cart a:hover{
+    color: white;
+}
+.contact:hover{
+    padding: 10px;
+    background-color: rgb(9, 147, 9);
+    color: white;
+    border-radius: 3px;
+}
+.login .count{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(9, 147, 9);
+    position: absolute;
+    top: -100%;
+    right: 75%;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#index_login{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+#index_login:hover{
+    padding: 10px;
+    background-color: rgb(9, 147, 9);
+    color: white;
+    border-radius: 3px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    margin-top: 20px;
+}
+.category{
+    width: 20%;
+}
+.category .pro{
+    border-radius: 4px;
+    margin-block: 18px;
+    padding-inline: 20px;
+    text-align: center;
+}
+.cat{
+    margin: 0;
+    padding-inline: 20px;
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    text-align: left;
+    i{
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        font-size: 14px;
+    }
+}
+
+.cat-items ul{
+    list-style: none;
+    padding-left: 0;
+    /* overflow: auto; */
+    li{
+        padding-block: 10px;
+        padding-inline: 10px;
+        border-radius: 3px;
+        font-size: 20px;
+        transition: all 0.5s;
+    }
+    li:hover{
+        /* border-color: #099309; */
+        transform: translateX(20px)scale(1.1);
+        cursor: pointer;
+        color: #099309;
+    }
+}
+.cat-items{
+    border: 2px solid rgb(9, 147, 9);
+    border-top: 0;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    gap: 30px;
+    padding-top: 18px;
+}
+.display .loading{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px dotted #099309;
+    border-right-color: transparent;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin: auto;
+    position: relative;
+}
+@keyframes load{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+/* 
+START CARD DESIGN
+*/
+.card{
+    width: 24%;
+    border-color: #dfe2e1;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 2px;
+    transition: all 0.5s;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+
+}
+.card:hover{
+    border-color: #099309;
+    cursor: pointer;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* transform: scale(1.1); */
+
+}
+.card:hover img{
+    transform: scale(1.1);
+}
+.card img{
+    width: 100%;
+    transition: all 0.5s;
+}
+.card .price,.add{
+    display: flex;
+    justify-content: space-between;
+}
+.infoProduct{
+    padding: 10px;
+    
+}
+.card button{
+    /* width: 100px; */
+    height: 35px;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    left: 20px;
+    background-color: transparent;
+    border: 2px solid #099309;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.card button:hover{
+    background-color: #099309;
+    color: white;
+}
+/* 
+END CARD DESIGN
+*/
+.category h3{
+    height: 30px;
+    border: 2px solid #099309;
+    background-color: transparent;
+    transition: all 0.5s;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.block{
+    display: none;
+}
+.visible{
+    visibility: hidden;
+}
+.category .pro:hover{
+    background-color: #099309;
+    color: white;
+}
+.category .hover:hover{
+    background-color: #099309;
+    color: white;
+}
+
+footer{
+    margin-top: 50px;
+    align-items: left;
+    justify-content: space-around;
+    z-index: 1;
+    background-color: #fafffe;
+    box-shadow: 0px 2px 5px rgb(0 12 0 / 33%);
+    h3{
+        margin-left: 20px;
+    }
+    span{
+        margin-right: 20px;
+        color: rgb(9, 147, 9);
+    }
+}
+.upwork{
+    text-decoration: none;
+    color: black;
+
+}
